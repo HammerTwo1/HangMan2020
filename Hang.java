@@ -9,12 +9,9 @@ public class Hang {
 
         System.out.println("Round1");
 
-        
-
         System.out.print(word("fire"));
         System.out.print("\n___");
         
-        System.out.println("Bitch")
         
     }
 
