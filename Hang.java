@@ -14,6 +14,8 @@ public class Hang {
         System.out.print(word("fire"));
         System.out.print("\n___");
         
+        System.out.println("Bitch")
+        
     }
 
     public static char word(String w){
