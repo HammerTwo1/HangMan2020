@@ -4,7 +4,7 @@ public class Hang {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter Your Name: ");
+        System.out.print("Enter Your Social Security Number: ");
         String player = input.nextLine();
 
         System.out.println("Round1");
