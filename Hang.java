@@ -3,43 +3,35 @@ import java.io.*;
 
 public class Hang {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        // Scanner input = new Scanner(System.in);
 
-        System.out.print("Chose a letter: ");
-        String player = input.nextLine();
+        // System.out.print("Chose a letter: ");
+        // String player = input.nextLine();
 
         
-        String[] Words = new String[100];
+        ArrayList<String> words = new ArrayList<>();
 
-        try
-        {  
+        try{  
            Scanner fScanner = new Scanner(new File("words.txt"));
-           
-           
-           
-           while(fScanner.hasNextLine())
-           {
-              words = fScanner.nextLine();
+            
+            while(fScanner.hasNextLine()){
+
+                words.add(fScanner.nextLine());
            }
-           
-           System.out.println(s);
         
-        }
-        catch(FileNotFoundException fnf)
-        {
-           System.out.println("no file not found: " + fnf);
+        }catch(FileNotFoundException fnf){
+            System.out.println("no file not found: " + fnf);
         } 
         
+        System.out.println(rand(words.size()));
     }
 
-    public static char word(String w){
+    public static int rand(int numWords){
 
-        char ran = 'f';
+        int rand = (int)(Math.random()*numWords);
+       
 
-        return ran;
+        return rand;
     }
 
-    public static void body(){
-
-    }
 }
