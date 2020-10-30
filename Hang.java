@@ -23,7 +23,7 @@ public class Hang {
             System.out.println("no file not found: " + fnf);
         } 
         
-        System.out.println(rand(words.size()));
+        System.out.println(words.get(rand(words.size())));
     }
 
     public static int rand(int numWords){
