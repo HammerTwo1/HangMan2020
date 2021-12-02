@@ -36,6 +36,7 @@ public class Hang {
 
         int rand = (int)(Math.random()*numWords);
        
+        System.out.println("Hello!");
 
         return rand;
     }
